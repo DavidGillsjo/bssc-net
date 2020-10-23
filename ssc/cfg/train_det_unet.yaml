@@ -1,0 +1,26 @@
+net: ssc.net.deterministic.UNet
+epochs: 200
+save_interval: 50
+val_interval: 10
+# Base depth 8 -> Batch size 10
+# Base depth 12 -> Batch size 6
+batch_size: 28
+num_workers: 2
+learning_rate: 1.0e-3
+lr_decay_factor: 1.0
+# lr_decay_factor: 0.99
+lr_decay_period: 10
+weight_decay: 0
+nbr_examples: 0
+mapping: suncg11
+shuffle: False
+kl_beta: 0.0
+nbr_f_samples: 0
+fixed: True
+tsdf_type: flipped_tsdf #tsdf, flipped_tsdf
+activation: 'softplus-softmax' #relu, softplus, softmax
+batch_norm: True
+
+#Unet specific
+#Padding: Since the UNET is 4 deep the input shapes need to have 2^4 as a factor.
+UNet_padding: [4, 8, 4] #Since input is [60, 40, 60]

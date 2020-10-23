@@ -1,0 +1,23 @@
+net: ssc.net.deterministic.SSC
+epochs: 150
+save_interval: 10
+val_interval: 10
+batch_size: 10
+num_workers: 5
+learning_rate: 1.0e-3
+lr_decay_factor: 0.99
+lr_decay_period: 10
+weight_decay: 0.0
+nbr_examples: 0
+mapping: suncg11
+shuffle: False
+fixed: True
+kl_beta: 1.0e-1
+tsdf_type: flipped_tsdf #tsdf, flipped_tsdf
+activation: 'softplus-softmax' #relu, softplus, softmax
+batch_norm: True
+
+prior:
+  name: Cauchy
+  gamma: 0.05
+var_init: 0.05

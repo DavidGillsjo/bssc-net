@@ -1,0 +1,10 @@
+batch_size: 32
+num_workers: 4
+nbr_tb_examples: 0
+nbr_examples: 20
+# nbr_examples: 20
+# example_categories: ['bed']
+shuffle: False
+nbr_f_samples: 20
+flip: False
+make_pdf: True

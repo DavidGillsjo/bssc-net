@@ -1,0 +1,15 @@
+net: ssc.net.bayesian.models.BSSC_UNet
+batch_size: 28
+num_workers: 2
+nbr_examples: 20
+mapping: suncg11
+shuffle: False
+nbr_f_samples: 20
+fixed: False
+tsdf_type: flipped_tsdf #tsdf, flipped_tsdf
+activation: 'softplus-softmax' #relu, softplus, softmax
+batch_norm: True
+
+#Unet specific
+#Padding: Since the UNET is 4 deep the input shapes need to have 2^4 as a factor.
+UNet_padding: [4, 8, 4] #Since input is [60, 40, 60]

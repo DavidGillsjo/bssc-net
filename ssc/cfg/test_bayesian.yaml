@@ -1,0 +1,10 @@
+net: ssc.net.bayesian.models.BSSC
+batch_size: 16
+num_workers: 2
+nbr_examples: 20
+mapping: suncg11
+shuffle: False
+nbr_f_samples: 20
+tsdf_type: flipped_tsdf #tsdf, flipped_tsdf
+activation: 'softplus-softmax' #relu, softplus, softmax
+batch_norm: True

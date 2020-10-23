@@ -1,0 +1,51 @@
+labels:
+- free
+- ceiling
+- floor
+- wall
+- window
+- chair
+- bed
+- sofa
+- table
+- tvs
+- furn
+- objs
+mapping:
+  free: free
+  ceiling: ceiling
+  floor: floor
+  wall: wall
+  window: window
+  door: objs
+  chair: chair
+  bed: bed
+  sofa: sofa
+  table: table
+  side_table: table
+  bookshelf: furn
+  kitchen_cabinet: furn
+  closets_wardrobes_cabinets: furn
+  lamp: objs
+  car: objs
+  computer: tvs
+  desk: table
+  music: objs
+  gym: objs
+  household_appliance: objs
+  kitchen_appliance: objs
+  pillow: objs
+  pets: objs
+  plants: objs
+  pool: objs
+  recreation: objs
+  night_stand: furn
+  bathtub: furn
+  shower: objs
+  table_and_chair: table
+  toilet: furn
+  trash_can: objs
+  tvs: tvs
+  sink: objs
+  mirror: objs
+  dont_care: objs

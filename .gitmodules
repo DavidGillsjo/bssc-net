@@ -1,0 +1,15 @@
+[submodule "tsdf-fusion-python"]
+	path = libs/tsdf-fusion-python
+	url = git@github.com:DavidGillsjo/tsdf-fusion-python.git
+[submodule "House3D"]
+	path = libs/House3D
+	url = git@github.com:DavidGillsjo/House3D.git
+[submodule "SUNCGtoolbox"]
+	path = libs/SUNCGtoolbox
+	url = git@github.com:tinytangent/SUNCGtoolbox.git
+[submodule "binvox-rw-py"]
+	path = libs/binvox-rw-py
+	url = git@github.com:dimatura/binvox-rw-py.git
+[submodule "libs/dockers"]
+	path = libs/dockers
+	url = git@github.com:DavidGillsjo/dockers.git

@@ -1,0 +1,46 @@
+labels:
+- free
+- ceiling
+- floor
+- wall
+- window
+- door
+- object
+mapping:
+  free: free
+  ceiling: ceiling
+  floor: floor
+  wall: wall
+  window: window
+  door: door
+  chair: object
+  bed: object
+  sofa: object
+  table: object
+  side_table: object
+  bookshelf: object
+  kitchen_cabinet: object
+  closets_wardrobes_cabinets: object
+  lamp: object
+  car: object
+  computer: object
+  desk: object
+  music: object
+  gym: object
+  household_appliance: object
+  kitchen_appliance: object
+  pillow: object
+  pets: object
+  plants: object
+  pool: object
+  recreation: object
+  night_stand: object
+  bathtub: object
+  shower: object
+  table_and_chair: object
+  toilet: object
+  trash_can: object
+  tvs: object
+  sink: object
+  mirror: object
+  dont_care: object

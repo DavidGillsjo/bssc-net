@@ -1,0 +1,32 @@
+net: ssc.net.bayesian.models.MNIST_BCNN_simple
+# net: ssc.net.deterministic.MNIST_CNN_simple
+epochs: 61
+save_interval: 60
+val_interval: 5
+batch_size: 250
+num_workers: 10
+learning_rate: 1.0e-4
+lr_decay_factor: 1.0
+lr_decay_period: 20
+weight_decay: 0
+nbr_examples: 0
+shuffle: True
+fixed: False
+kl_beta: 1
+nbr_f_samples: 20
+excluded_labels: [0]
+activation: 'softplus-softmax' #relu, softplus, softmax
+batch_norm: True
+make_pdf: True
+
+#For possible priors see net/bayesian/prior.py
+#Include model parameters inside the prior dict
+prior:
+  name: Cauchy
+  gamma: 0.5
+var_init: 0.5
+
+# Use entropy and score to Classify
+sample_net_weight_decay: 0.01
+fuse_metrics: ['mean_score', 'snr', 'coef_var', 'dispersion', 'rel_entropy', 'rel_entropy_inv']
+freeze_bnn: True

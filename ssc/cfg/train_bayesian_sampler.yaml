@@ -1,0 +1,40 @@
+# net: ssc.net.bayesian.models.BSSC
+net: ssc.net.bayesian.models.BSSC_UNet
+epochs: 100
+save_interval: 10
+val_interval: 5
+# val_interval: 5
+# Base depth 8 -> Batch size 10
+# Base depth 12 -> Batch size 6
+batch_size: 10
+num_workers: 2
+learning_rate: 1.0e-3
+lr_decay_factor: 1.0
+lr_decay_period: 20
+weight_decay: 0
+nbr_examples: 5
+mapping: suncg11
+shuffle: False
+kl_beta: 1.0e-1
+nbr_f_samples: 30
+fixed: False
+tsdf_type: flipped_tsdf #tsdf, flipped_tsdf
+activation: 'softplus-softmax' #relu, softplus, softmax
+batch_norm: True
+
+#For possible priors see net/bayesian/prior.py
+#Include model parameters inside the prior dict
+prior:
+  name: Cauchy
+  gamma: 0.05
+var_init: 0.05
+
+# Use Statistic metrics to classify
+sample_net_weight_decay: 0.01
+fuse_metrics: ['mean_score', 'snr', 'coef_var', 'dispersion', 'rel_entropy', 'rel_entropy_inv']
+freeze_bnn: True
+
+
+#Unet specific
+#Padding: Since the UNET is 4 deep the input shapes need to have 2^4 as a factor.
+UNet_padding: [4, 8, 4] #Since input is [60, 40, 60]

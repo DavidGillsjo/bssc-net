@@ -1,0 +1,8 @@
+var_init: [0.3, 0.5]
+prior:
+  - {name: cauchy, gamma: 0.1}
+  - {name: cauchy, gamma: 0.3}
+  - {name: cauchy, gamma: 0.5}
+  - {name: gaussianmixture, sigma0: 0.1, sigma1: 1.0, alpha: 0.01}
+  - {name: gaussianmixture, sigma0: 0.1, sigma1: 1.0, alpha: 0.5}
+  - {name: gaussianmixture, sigma0: 0.1, sigma1: 1.0, alpha: 0.9}

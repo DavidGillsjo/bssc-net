@@ -1,0 +1,28 @@
+net: ssc.net.bayesian.models.BSSC
+epochs: 300
+save_interval: 50
+val_interval: 10
+# Base depth 8 -> Batch size 10
+# Base depth 12 -> Batch size 6
+batch_size: 10
+num_workers: 2
+learning_rate: 1.0e-3
+lr_decay_factor: 1.0
+lr_decay_period: 20
+weight_decay: 0
+nbr_examples: 0
+mapping: suncg11
+shuffle: False
+kl_beta: 1.0e-1
+nbr_f_samples: 30
+fixed: False
+tsdf_type: flipped_tsdf #tsdf, flipped_tsdf
+activation: 'softplus-softmax' #relu, softplus, softmax
+batch_norm: True
+
+#For possible priors see net/bayesian/prior.py
+#Include model parameters inside the prior dict
+prior:
+  name: Cauchy
+  gamma: 0.05
+var_init: 0.05
