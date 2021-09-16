@@ -113,14 +113,15 @@ python3 eval.py ../../example ../../example/dataset.json bssc_unet.tar --cfg ../
 
 ## Citation
 ```
-@misc{gillsjö2020depth,
-      title={In Depth Bayesian Semantic Scene Completion},
-      author={David Gillsjö and Kalle Åström},
-      year={2020},
-      eprint={2010.08310},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
-}
+@INPROCEEDINGS{bssc_net,
+  author={Gillsjö, David and Åström, Kalle},
+  booktitle={2020 25th International Conference on Pattern Recognition (ICPR)}, 
+  title={In Depth Bayesian Semantic Scene Completion}, 
+  year={2021},
+  volume={},
+  number={},
+  pages={6335-6342},
+  doi={10.1109/ICPR48806.2021.9412403}}
 ```
 
 ## Acknowledgment
