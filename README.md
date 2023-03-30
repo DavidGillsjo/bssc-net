@@ -1,7 +1,7 @@
 # BSSC-Net
 CNN for Bayesian Semantic Scene Completion from a single depth image.
 This is the code release for [our paper](https://ieeexplore.ieee.org/document/9412403)
-from ICPR2020.
+from ICPR2020. Preprint is also available [at ArXiV](https://arxiv.org/abs/2010.08310).
 
 ![Image of BSSC-Net](./image/network.png)
 
